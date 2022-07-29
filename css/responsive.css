@@ -1,0 +1,124 @@
+@media (min-width: 991px) and (max-width:1200px) {
+    .navbar-brand.p-0 {
+        width: 170px;
+    }
+
+    .header .navbar-nav .nav-item {
+        margin-right: 15px;
+    }
+
+    .header .navbar-nav .nav-item .nav-link {
+        font-size: 15px;
+    }
+
+    .header .right a {
+        font-size: 15px;
+        padding: 0px 15px;
+    }
+
+    .header .navbar-nav {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .navbar-light .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    .header {
+        padding: 15px 0px;
+    }
+
+    .header .navbar-nav .nav-item {
+        margin-right: 0px;
+    }
+
+    .header .right {
+        padding-bottom: 10px;
+    }
+
+    .header nav {
+        text-align: center;
+    }
+
+    .header nav .navbar-nav {
+        border-top: 1px solid #000;
+        margin-top: 20px;
+        padding-top: 20px;
+        margin-left: 0;
+    }
+
+    .navbar-light .navbar-toggler {
+        border: 0;
+    }
+
+    .header nav .navbar-nav .nav-item .nav-link {
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+    .black_bg nav .navbar-nav {
+        border-top: 1px solid #fff;
+
+    }
+
+    .black_bg .navbar-light .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(225, 225, 225, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    .contact_btm {
+        padding: 20px 15px;
+    }
+
+    .ab_black_text {
+        margin-bottom: 50px;
+    }
+
+    #about .side_text h4,
+    #about .side_text1 h4 {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .contact_btm .ftr_logo {
+        padding-top: 100px;
+    }
+
+    #about .ab_property {
+        padding: 45px 0px 40px;
+    }
+}
+
+@media (max-width: 575px) {
+    .navbar-brand.p-0 {
+        width: 140px;
+        margin-left: 15px;
+    }
+
+    #about h1 {
+        font-size: 32px;
+    }
+
+    .img {
+        margin: 0px 15px;
+    }
+
+    .contact_top h2 {
+        font-size: 45px;
+    }
+
+    #about .ab_left::before {
+        display: none;
+    }
+
+    .contact_btm .ftr_logo img {
+        width: 140px;
+    }
+
+    footer p {
+        padding: 0px 15px;
+    }
+}

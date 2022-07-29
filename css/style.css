@@ -1,0 +1,482 @@
+/* common part start here  */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+button:focus {
+    outline: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li,
+img,
+address,
+figure,
+figcaption {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+@font-face {
+    font-family: AT_Sackers_Heavy_Gothic;
+    src: url(../fonts/AT_Sackers_Heavy_Gothic.ttf);
+}
+
+@font-face {
+    font-family: Euphemia_UCAS_Regular;
+    src: url(../fonts/Euphemia_UCAS_Regular_2.6.6.ttf);
+}
+
+@font-face {
+    font-family: sackers_gothic_medium;
+    src: url(../fonts/sackers_gothic_medium_at.otf);
+}
+
+@font-face {
+    font-family: Sackers_Gothic_Light;
+    src: url(../fonts/Sackers_Gothic_Light_AT.otf);
+}
+
+@font-face {
+    font-family: MyriadPro-Regular;
+    src: url(../fonts/MyriadPro-Regular.otf);
+}
+
+
+/* common part ends here */
+
+
+/* header part start here */
+
+.header {
+    padding: 25px 0px;
+    border-bottom: 2px solid #000;
+}
+
+.property {
+    background: #dce9f0;
+}
+
+.black_bg {
+    background: #000;
+    border-bottom: 2px solid #dce9f0;
+}
+
+.black_bg1 {
+    background: #000;
+}
+
+.header .navbar-nav {
+    margin-left: 40px;
+}
+
+.header .navbar-nav .nav-item {
+    margin-right: 30px;
+}
+
+.header .navbar-nav .nav-item .nav-link {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #000101;
+    font-family: AT_Sackers_Heavy_Gothic;
+    padding: 0;
+    position: relative;
+}
+
+.black_bg .navbar-nav .nav-item .nav-link {
+    color: #dce9f0;
+}
+
+.header .navbar-nav .nav-item .nav-link:before {
+    background: #8c9499;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    opacity: 0;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -mos-transition: all linear .3s;
+    -mz-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.header .navbar-nav .nav-item .nav-link.active:before,
+.header .navbar-nav .nav-item .nav-link:hover:before {
+    opacity: 1;
+    width: 100%;
+}
+
+.header .right a {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #000101;
+    font-family: AT_Sackers_Heavy_Gothic;
+    padding: 0px 20px;
+    line-height: 40px;
+    border: 2px solid #000;
+    display: inline-block;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -mos-transition: all linear .3s;
+    -mz-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.black_bg .right a {
+    border: 2px solid #dce9f0;
+    color: #dce9f0;
+}
+
+.black_bg .right a:hover {
+    background: #dce9f0 !important;
+    color: #000101 !important;
+}
+
+.header .right a:hover {
+    background: #000101;
+    color: #dce9f0;
+}
+
+/* header part ends here */
+
+/* about_top part start here */
+
+
+#about h1 {
+    padding: 58px 0px 62px;
+    color: #fefefe;
+    font-size: 56px;
+    font-family: AT_Sackers_Heavy_Gothic;
+}
+
+#about .ab_location_top h1 {
+    color: #dce9f0;
+}
+
+ab_location {
+    position: relative;
+}
+
+#about .slidNext {
+    position: absolute;
+    right: -50px;
+    bottom: 50%;
+    font-size: 56px;
+    color: #dce9f0;
+    cursor: pointer;
+}
+
+#about .slidPrv {
+    position: absolute;
+    left: -50px;
+    bottom: 50%;
+    font-size: 56px;
+    color: #dce9f0;
+    cursor: pointer;
+}
+
+.property .slidNext,
+.property .slidPrv {
+    color: #808181 !important;
+}
+
+#about .ab_middle {
+    position: relative;
+}
+
+#about .side_text1 {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    -webkit-transform: translateY(-50%) rotate(90deg);
+    -moz-transform: translateY(-50%) rotate(90deg);
+    -ms-transform: translateY(-50%) rotate(90deg);
+    -o-transform: translateY(-50%) rotate(90deg);
+}
+
+#about .side_text {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    -webkit-transform: translateY(-50%) rotate(90deg);
+    -moz-transform: translateY(-50%) rotate(90deg);
+    -ms-transform: translateY(-50%) rotate(90deg);
+    -o-transform: translateY(-50%) rotate(90deg);
+}
+
+#about .side_text h4,
+#about .side_text1 h4 {
+    font-family: Sackers_Gothic_Light;
+    color: #000;
+}
+
+.black_bg1 .side_text h4,
+.black_bg1 .side_text1 h4 {
+    color: #fff !important;
+}
+
+.ab_black_text h4 {
+    color: #fff;
+    font-size: 19px;
+    font-family: AT_Sackers_Heavy_Gothic;
+    padding-bottom: 35px;
+}
+
+.ab_black_text p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 26px;
+    font-family: Sackers_Gothic_Light;
+}
+
+.ab_black_box {
+    padding-bottom: 80px;
+}
+
+.ab_black_text {
+    position: relative;
+    padding-left: 30px;
+}
+
+.ab_black_text:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    height: 100%;
+    width: 1px;
+    background: #dce9f0;
+}
+
+/* about Middle ends */
+
+
+#about .ab_property {
+    padding: 75px 0px 70px;
+}
+
+#about .ab_left {
+    position: relative;
+}
+
+#about .ab_left:before {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background: #fff;
+    content: '';
+}
+
+#about .ab_left p {
+    padding-left: 30px;
+    font-family: Euphemia_UCAS_Regular;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 20px;
+}
+
+#about .ab_right P {
+    font-family: Euphemia_UCAS_Regular;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+}
+
+#about .ab_location {
+    padding: 70px 0px 50px;
+}
+
+#about .ab_location h4 {
+    font-size: 18px;
+    line-height: 26px;
+    color: #000;
+    font-family: sackers_gothic_medium;
+    padding-bottom: 55px;
+}
+
+#about .ab_location .ab_left:before {
+    background: #dce9f0;
+}
+
+.ab_location .ab_life h4 {
+    padding-bottom: 0px !important;
+}
+
+/* about_top part ends here */
+
+/* contact_top part ends here */
+
+.contact_top {
+    padding: 53px 0px 75px;
+}
+
+.con_property {
+    background: url(../images/ftrTheProperty.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.con_location {
+    background: url(../images/ftrTheLocation.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.con_black {
+    background: url(../images/ftrAbout.jpg) no-repeat center;
+    background-size: cover;
+    padding: 100px 0px 75px;
+}
+
+.contact_top h2 {
+    font-size: 56px;
+    color: #000;
+    font-family: AT_Sackers_Heavy_Gothic;
+}
+
+.con_black h2 {
+    font-size: 60px;
+    font-family: MyriadPro-Regular;
+    text-transform: uppercase;
+    color: #fff;
+    padding-bottom: 100px;
+}
+
+.con_black ul li {
+    font-size: 18px;
+    color: #fff;
+    font-family: MyriadPro-Regular;
+}
+
+.contact_top ul {
+    padding-top: 50px;
+}
+
+.contact_top ul li {
+    font-size: 18px;
+    color: #000;
+    font-family: AT_Sackers_Heavy_Gothic;
+    padding-top: 12px;
+}
+
+/* contact_top part ends here */
+
+/* contact_btm part start here */
+
+.contact_btm {
+    padding: 40px 0px 40px;
+}
+
+.contact_btm input {
+    height: 50px;
+    border: 0;
+    background: 0;
+    color: #000;
+    text-align: center;
+    margin-top: 20px;
+    border-bottom: 2px solid #fff;
+    font-family: sackers_gothic_medium;
+}
+
+.cont_loction_btm input {
+    border-bottom: 2px solid #000;
+}
+
+.contact_btm .btn {
+    height: 65px;
+    padding: 0px 70px;
+    background: #000;
+    color: #fff;
+    border: 0;
+    border-radius: 0;
+    margin-top: 50px;
+    font-family: AT_Sackers_Heavy_Gothic;
+    font-size: 18px;
+    transition: all linear .3s;
+}
+
+.contact_btm .btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+.cont_loction_btm .btn:hover {
+    background: #dce9f0;
+}
+
+.contact_btm .ftr_logo {
+    padding-top: 155px;
+}
+
+.contact_btm .ftr_logo img {
+    padding: 0px 20px;
+}
+
+.black_bg .contact_btm input {
+    color: #fff;
+    font-family: MyriadPro-Regular;
+}
+
+.black_bg .contact_btm .btn {
+    background: #fff;
+    color: #000;
+    font-family: MyriadPro-Regular;
+}
+
+.black_bg .btn:hover {
+    background: #dce9f0;
+}
+
+/* contact_btm part ends here */
+
+/* footer part start here */
+
+footer {
+    padding: 30px 0px 35px;
+    border-top: 1px solid #000;
+}
+
+footer p {
+    font-size: 10px;
+    line-height: 14px;
+    color: #000;
+    font-family: Euphemia_UCAS_Regular;
+}
+
+.black_bg1 p {
+    color: #fff;
+}
+
+/* footer part ends here */
